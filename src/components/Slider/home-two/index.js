@@ -1,7 +1,7 @@
 import React from 'react';
 import parse from 'html-react-parser'
 import SlickSlider from '../../UI/Slick'
-import SliderData from '../../../data/Slider/home-2'
+// import SliderData from '../../../data/Slider/home-2'
 import {Link} from "react-router-dom";
 
 const NextArrow = ({className, onClick}) => {
@@ -17,6 +17,10 @@ const PrevArrow = ({className, onClick}) => {
 };
 
 const Slider = () => {
+
+     
+
+
     const settings = {
         arrows: true,
         dots: false,

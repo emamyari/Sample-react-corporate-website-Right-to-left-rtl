@@ -6,6 +6,8 @@ export default axios.create(
     {
     baseURL:Base_URL,
     headers:{
+        //token user pass and time 
+        //content type
             }
     }
 );
