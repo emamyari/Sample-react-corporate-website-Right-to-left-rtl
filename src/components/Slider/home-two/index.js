@@ -3,6 +3,8 @@ import parse from 'html-react-parser'
 import SlickSlider from '../../UI/Slick'
 // import SliderData from '../../../data/Slider/home-2'
 import {Link} from "react-router-dom";
+import useAxios from '../../../helpers/call';
+import axios from 'axios';
 
 const NextArrow = ({className, onClick}) => {
     return (
@@ -18,9 +20,12 @@ const PrevArrow = ({className, onClick}) => {
 
 const Slider = () => {
 
-     
-
-
+    const [SliderData,error,loading]=useAxios({
+        axiosInstance:axios,
+        method:"Get",
+        url:"getStudents"
+    })
+ 
     const settings = {
         arrows: true,
         dots: false,
